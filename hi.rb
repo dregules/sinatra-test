@@ -9,8 +9,9 @@ get '/secret' do
   "Hello secret Brandon!"
 end
 
-get '/diego' do
-  "diegorules!"
+get '/hello' do
+  @visitor = params[:name]
+  erb :index
 end
 
 
